@@ -8,12 +8,13 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 const router = createBrowserRouter([
   // basename: '/app',
   // children: <App />
+  { path : '/', element: <RevealLink /> },
   { path : '/app', element: <App /> },
   { path : '/reveal-link', element: <RevealLink /> }
 ])
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />/
+    <RouterProvider router={router} />
   </StrictMode>,
 )
